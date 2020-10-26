@@ -1,0 +1,12 @@
+def checkio(number: int) -> str:
+# using a dictionnary instead of if...else
+'''"Fizz Buzz" if the number is divisible by 3 and by 5;
+"Fizz" if the number is divisible by 3;
+"Buzz" if the number is divisible by 5;
+The number as a string for other cases.
+Input: A number as an integer.
+
+Output: The answer as a string.'''
+    return {(1, 1): "Fizz Buzz", (1, 0): "Fizz", (0, 1): "Buzz", (0, 0): str(number)}[not number % 3, not number % 5]
+    
+    
